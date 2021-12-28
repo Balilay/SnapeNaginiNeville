@@ -4,7 +4,7 @@ user_action = input("Play your move! Snape, Nagini or Neville? ")
 
 possible_actions = ["Snape", "Nagini", "Neville"]
 computer_action = random.choice(possible_actions)
-    print("You chose " + str(user_action) + ", computer chose " + str(computer_action) + "\n") 
+    print("You chose " + (user_action) + ", computer chose " + (computer_action) + "\n") 
 
     
 def game(user_action, computer_action):
