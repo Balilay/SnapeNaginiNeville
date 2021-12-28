@@ -4,12 +4,11 @@ user_action = input("Play your move! Snape, Nagini or Neville? ")
 
 possible_actions = ["Snape", "Nagini", "Neville"]
 computer_action = random.choice(possible_actions)
-    print("You chose " + (user_action) + ", computer chose " + (computer_action) + "\n") 
+    print("You chose " + (user_action) + ", computer chose " + (computer_action)) 
 
-    
-def game(user_action, computer_action):
     if user_action == computer_action:
         print("Both players selected " + (user_move) + ". It's a tie!"
+              
     elif user_action == "Snape":
           if computer_action == "Neville":
             print("Snape gives detention to Neville! You win!")
