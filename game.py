@@ -9,22 +9,22 @@ player = False
 while player == False:
     player = input("Make your choice! Snape, Nagini or Neville? ")
     if player == computer:
-        print("It's a tie!")
+        print("Computer chose", computer, "- It's a tie!")
     elif player == "Snape":
         if computer == "Nagini":
-            print("You lose!", computer, "eats ", player)
+            print("Computer chose", computer, "- You lose!", computer, "eats", player)
         else:
-            print("You win!", player, "gives detention to ", computer)
+            print("Computer chose", computer, "- You win!", player, "gives detention to", computer)
     elif player == "Nagini":
         if computer == "Neville":
-            print("You lose!", computer, "beheads", player)
+            print("Computer chose", computer, "- You lose!", computer, "beheads", player)
         else:
-            print("You win!", player, "eats", computer)
+            print("Computer chose", computer, "- You win!", player, "eats", computer)
     elif player == "Neville":
         if computer == "Snape":
-            print("You lose...", computer, "gives detention to", player)
+            print("Computer chose", computer, "- You lose!", computer, "gives detention to", player)
         else:
-            print("You win!", player, "beheads", computer)
+            print("Computer chose", computer, "- You win!", player, "beheads", computer)
     else:
         print("That's not a valid play. Check your spelling!")
 
